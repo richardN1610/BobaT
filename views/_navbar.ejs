@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="drinks.css">
+    
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="stripe_payment.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Boba Tea</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <a href="/"><li class="logo" id="logo-btn">B♥baT</li></a>
+            <a href="drinks"><li class="available-drinks">Our Drinks</li></a>
+            <li id="about-btn">About Us</li>
+            <li id="contact-btn">Contact Us</li>
+            <li id="cart-btn">Purchase</li>
+        </ul>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart" id="cart">
+            <div class="cart-title">
+                <span>Cart</span>
+                <span class="close-cart" id="close-cart">&times</span>
+            </div>
+            <div class="cart-body">
+            </div>
+            <div class="cart-end">
+                <div class="total-amount">
+                    Total : $0
+                </div>
+                <div class="pay-btn">
+                    <span>Checkout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-modal" id="about-us-modal">
+        <div class="about-us" id="about-us">
+            <div class="close-about" id="close-about"><span>&#10006</span></div>
+            <div class="about-us-header">
+                <span>About Us</span>
+            </div>
+            <div class="about-us-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eaque, neque pariatur nemo voluptates porro fugit dolorem ex distinctio iste delectus numquam praesentium aspernatur possimus obcaecati cum esse, provident eligendi?</p>
+                <p>Ipsum laboriosam quae voluptatem placeat aut debitis sed quibusdam quaerat possimus? Nesciunt, ipsa! Eaque praesentium amet suscipit ducimus consequatur dolorem, aut similique, officiis obcaecati sapiente sed repellat asperiores quo ipsa?</p>
+                <p>Assumenda, dolore voluptatem, temporibus excepturi iusto incidunt tempora quos, quia obcaecati culpa alias?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us-modal" id="contact-us-modal">
+        <div class="contact-us" id="contact-us">
+            <div class="close-contact-form-btn" id="close-contact"><span>&#10006</span></div>
+            <div class="contact-us-header">
+                <span>Contact Us</span>
+            </div>
+            <div class="contact-subheader">
+                <span>Your comments, feedback, or suggetions are valueable to us. <br> To write to us, please complete the form.</span>
+            </div>
+
+            <form action="">
+                <div class="form-details">
+                    <div class="name">
+                        <input type="text" placeholder="Full Name" autocomplete="off" required> 
+                    </div>
+                    <div class="phone-number">
+                        <input type="text" placeholder="Phone Number" autocomplete="off" required>
+                    </div>
+                    <div class="email-address">
+                        <input type="email" placeholder="Email" autocomplete="off" required>
+                    </div>
+                    <div class="text-message">
+                        <textarea name="user-message" id="user-message" cols="30" rows="1" placeholder="Message" autocomplete="off" required></textarea>
+                    </div>
+                </div>
+                <div class="send-contact">
+                    Send&#8594
+                </div>
+            </form>
+        </div>
+    </div>

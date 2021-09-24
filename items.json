@@ -1,0 +1,190 @@
+{
+    "cold":[
+        {
+            "id":1,
+            "name": "Blue Rio",
+            "price": 999,
+            "img" :"drink1.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":2,
+            "name": "Green Rio",
+            "price": 999,
+            "img" :"drink2.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":3,
+            "name": "Random Random",
+            "price": 999,
+            "img" :"drink3.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":4,
+            "name": "Salted Caramel",
+            "price": 999,
+            "img" :"drink4.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":5,
+            "name": "Berry Berry",
+            "price": 999,
+            "img" :"drink5.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":6,
+            "name": "Purple Potion",
+            "price": 999,
+            "img" :"drink6.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":7,
+            "name": "Strawberry Rush",
+            "price": 999,
+            "img" :"drink7.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":8,
+            "name": "Toxic Love",
+            "price": 999,
+            "img" :"drink8.png",
+            "kj" : "1600kJ"
+        }
+    ],
+    "top10":[
+        {
+            "id":8,
+            "name": "Blue Rio",
+            "price": 999,
+            "img" :"drink8.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":11,
+            "name": "Green Rio",
+            "price": 999,
+            "img" :"drink11.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":5,
+            "name": "Random Random",
+            "price": 999,
+            "img" :"drink5.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":9,
+            "name": "Berry Berry",
+            "price": 999,
+            "img" :"drink9.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":13,
+            "name": "Purple Potion",
+            "price": 999,
+            "img" :"drink13.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":12,
+            "name": "Strawberry Rush",
+            "price": 999,
+            "img" :"drink12.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":7,
+            "name": "Toxic Love",
+            "price": 999,
+            "img" :"drink7.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":10,
+            "name": "No Name",
+            "price": 999,
+            "img" :"drink10.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":3,
+            "name": "Undefined",
+            "price": 999,
+            "img" :"drink3.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":1,
+            "name": "Null Drink",
+            "price": 999,
+            "img" :"drink1.png",
+            "kj" : "1600kJ"
+        }
+    ],
+    "hot":[
+        {
+            "id":5,
+            "name": "Hot Drink 1",
+            "price": 999,
+            "img" :"drink5.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":6,
+            "name": "Signature 2",
+            "price": 999,
+            "img" :"drink6.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":8,
+            "name": "Another Drink 3",
+            "price": 999,
+            "img" :"drink8.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":9,
+            "name": "One More Please",
+            "price": 999,
+            "img" :"drink9.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":12,
+            "name": "I can't stop!",
+            "price": 999,
+            "img" :"drink12.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":13,
+            "name": "Boba Addiction",
+            "price": 999,
+            "img" :"drink13.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":7,
+            "name": "Every Day Boba",
+            "price": 999,
+            "img" :"drink7.png",
+            "kj" : "1600kJ"
+        },
+        {
+            "id":9,
+            "name": "This Is So Good",
+            "price": 999,
+            "img" :"drink9.png",
+            "kj" : "1600kJ"
+        }
+    ]
+}

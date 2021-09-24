@@ -1,0 +1,303 @@
+body{
+    background-color: #f1cd7f6e;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+.main-container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+.drink-title{
+    margin-top: 10vh;
+    font-size: 3vw;
+    text-align: center;
+    color: lightcoral;
+}
+
+.drinks{
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    row-gap: 3vh;
+    margin-top: 5vh;
+    padding-left: 20%;
+}
+
+.drink-type{
+    width: 20vw;
+    height: 45vh;
+    background-color: rgb(255,255,255,0.1);
+    box-shadow: -5px 5px 10px 0 rgb(0,0,0,0.1);
+    border-radius: 0.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drink-type img{
+    width: 50%;
+    height: 90%;
+}
+.drink-type .kj{
+    display: none;
+}
+.drink-type:hover .kj{
+    display: block;
+}
+.kj{
+    color: rgb(73, 71, 71);
+    font-size: 1.3vw;
+}
+
+.drink-type:hover img{  
+    transition: 0.3s ease-in-out;
+    transform: translateY(-5vh) rotate(-15deg) scale(1.15);  
+}
+.drink-details{
+    color: lightcoral;
+    font-size: 24px;
+}
+.drink-price{
+    float: right;
+}
+
+.buy-btn{
+    font-size: 1.2vw;
+    float: right;
+    border-radius: 0.3em;
+    width: 8vw;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: -2px 2px 5px rgb(63, 63, 63);
+    color: lightcoral;
+    border: none;
+}
+
+.buy-btn:active{
+    transform: translateY(2px);
+    box-shadow: -2px 2px 5px transparent;
+}
+
+
+.about-us{
+    background-color: white;
+    width: 50vw;
+    height: 45vh;
+    color: black;
+    border-bottom: 3vh solid lightcoral;
+    opacity: 0;
+}
+
+.about-us-header{
+    text-align: center;
+    font-size: 3vw;
+}
+.about-us-body{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 2vh;
+    font-size: 1.1vw;
+}
+.contact-us{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 10%;
+    width: 60vw;
+    height: 50vh;
+    background-color: white;
+    font-size: 1.5vw;
+    border-top: 2vh solid lightcoral;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    opacity: 0;
+}
+
+textarea{
+    resize: none;
+}
+.contact-subheader{
+    font-size: 1vw;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.form-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-details div{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.form-details input, .form-details textarea{
+    border: none;
+    padding: 10px 5px;
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-top: 2vh;
+    outline: none;
+}
+.about-us-modal{
+    padding-top: 75px; /* Location of the box */
+    padding-left: 40vw;
+}
+
+.contact-us-modal,.about-us-modal,.cart-modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contact-us-header{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.2vw;
+}
+.close-contact-form-btn, .close-about{
+    position: absolute;
+    z-index: 1;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.close-contact-form-btn{
+    top: -10%;
+    right: -2%;
+    background-color: white;
+    color: lightcoral;
+}
+.close-about{
+    right: 8%;
+    top: 5%;
+    color: white;
+    background-color: lightcoral;
+}
+
+.close-contact-form-btn:hover, .close-about:hover{
+    animation: btnSpin 0.5s;
+}
+
+@keyframes btnSpin{
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+.send-contact{
+    position: absolute;
+    right: 9%;
+    bottom: 10%;
+    cursor: pointer;
+    color: lightcoral;
+    font-size: 1.7vw;
+}
+.send-contact:hover{
+    color: wheat;
+}
+
+.cart{
+    width: 35vw;
+    height: 35vh;
+    background-color: white;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    border: 0.2vw solid lightcoral;
+}
+.cart-title{
+    font-size: 3vw;
+    text-align: center;
+}
+.close-cart{
+    position: absolute;
+    right: -2%;
+    top: -6%;
+    border-radius: 50%;
+    background-color: lightcoral;
+    width: 2vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.cart-body{
+    height: 22vh;
+    overflow: auto;
+}
+.cart-end{
+    font-size: 1.5vw;
+    display: grid;
+    grid-template-columns: 1fr 9vw;
+}
+.pay-btn{
+    cursor: pointer;
+    text-align: right;
+    padding-right: 10px;
+    background-color: lightcoral;
+    margin-right: 30px;
+}
+
+.total-amount{
+    padding-left: 30px;
+}
+
+.cart-drinks{
+    display: grid;
+    grid-template-columns : 70% 10% 10%;
+}
+
+.drink-list{
+    width: 25vw;
+    height: 40vh;
+    margin-top: 22vh;
+    position: absolute;
+}
+.drink-list-title{
+    font-size: 3vw;
+    padding-left: 2vw;
+}
+.drink-menu-selection ul{
+    padding-top: 3vh;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+.drink-menu-selection ul li{
+    font-size: 1.3vw;
+    padding-left: 2vw;
+    cursor: pointer;
+    margin-top: 15px;
+    color: black;
+}
+.drink-menu-selection ul li:hover{
+    color: lightcoral;
+    transform: scale(1.15);
+}
+.drink-name, .drink-price, .remove-item i{
+    padding-left: 10px;
+}
+.item-remove{
+    text-align: right;
+}
+.remove-item:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    color: wheat;
+}
