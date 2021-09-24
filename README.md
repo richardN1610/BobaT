@@ -13,6 +13,7 @@ I used Stripe for this because there are a lot of tutorials and documentaions on
 
 ---
 ###Technologies
+
 -EJS
 -Node.js
 -Stripe
