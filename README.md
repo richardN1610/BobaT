@@ -14,8 +14,13 @@ I used Stripe for this because there are a lot of tutorials and documentaions on
 ---
 ###Technologies
 
--EJS
--Node.js
--Stripe
--HTML & CSS
--Javascript
+*EJS
+
+*Node.js
+
+*Stripe Js
+
+*HTML & CSS
+
+*Javascript
+
