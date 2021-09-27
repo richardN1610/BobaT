@@ -1,17 +1,17 @@
 body{
-    background-color: #f1cd7f6e;
+    background-color: rgba(248, 247, 247, 0.911);
 }
 body{
     height: 100vh;
     overflow: hidden;
     font-family: 'Roboto Slab', serif;
 }
+
 .main-container{
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
 
 .drink-title{
     margin-top: 10vh;
@@ -23,11 +23,10 @@ body{
 .drinks{
     display: grid;
     grid-template-columns: 22vw 22vw 22vw;
-    grid-template-rows: 1fr 1fr;
     place-items: center;
     row-gap: 3vh;
-    margin-top: 5vh;
-    padding-left: 20%;
+    margin-top: 3vh;
+    padding-left: 25vw;
 }
 
 .drink-type{
@@ -88,7 +87,7 @@ body{
 .about-us{
     background-color: white;
     width: 50vw;
-    height: 45vh;
+    height: auto;
     color: black;
     border-bottom: 3vh solid lightcoral;
     opacity: 0;
@@ -265,20 +264,20 @@ textarea{
 .drink-list{
     width: 25vw;
     height: 40vh;
-    margin-top: 22vh;
+    top: 20vh;
     position: absolute;
 }
+
 .drink-list-title{
     font-size: 3vw;
     padding-left: 2vw;
 }
-.drink-menu-selection ul{
-    padding-top: 3vh;
-}
+
 a{
     text-decoration: none;
     outline: none;
 }
+
 .drink-menu-selection ul li{
     font-size: 1.3vw;
     padding-left: 2vw;
@@ -300,4 +299,305 @@ a{
     cursor: pointer;
     transform: scale(1.5);
     color: wheat;
+}
+.fa-info-circle{
+    color: rgb(59, 55, 55);
+    font-size: 1.5vw;
+}
+
+.container:hover .fa-info-circle{
+    display: none;
+}
+
+/*Mobile & tablet views*/
+@media screen and (max-width: 1024px){
+    .nav-bar ul li{
+        font-size: 1rem;
+        padding-bottom: 10px;
+        margin-left: 3vw;
+    }
+    .drink-title{
+        margin-top: 5%;
+    }
+    .drink-type{
+        width: 17vw;
+        height:20vh;
+    }
+    .drink-details{
+        font-size: 12px;
+    }
+    .drink-list{
+        top: 10%;
+    }
+    .about-us{
+        border-bottom: 1.5vh solid lightcoral;
+    }
+    .about-us-header{
+        font-size: 2rem;
+    }
+    .about-us-body{
+        margin-top: -5%;
+        font-size: 0.8rem;
+    }
+    .close-about{
+        top: 4.5%;
+    }
+    .contact-us{
+        top: 25%;
+        height: 30vh;
+    }
+    .contact-us-header span{
+        font-size: 2rem;
+    }
+    .contact-subheader span{
+        font-size: 0.85rem;
+    }
+    .send-contact{
+        bottom: 5%;
+        font-size: 1.8rem;
+    }
+    .cart{
+        width: 50vw;
+        height: 31vh;
+    }
+    .cart-title span{
+        font-size: 1.8rem;
+    }
+    .cart-end{
+        margin-top: 5%;
+        grid-template-columns: 1fr 15vw;
+    }
+    .total-amount, .pay-btn{
+        font-size: 1.2rem;
+    }
+    .cart-drinks{
+        grid-template-columns: 70% 15% 10%;
+    }
+    .drink-list-title{
+        font-size: 2.2rem;
+    }
+    .drink-menu-selection ul li{
+        font-size: 1rem;
+    }
+    .close-cart{
+        width: 4vw;
+        height: 4vw;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav-bar ul li{
+        font-size: 0.8rem;
+        padding-bottom: 2px;
+    }
+    .contact-us{
+        height: 40vh;
+        width: 65vw;
+        top: 40%;
+    }
+    .close-contact-form-btn{
+        top: -7%;
+    }
+    .cart{
+        top: 5%;
+        width: 55vw;
+        height: 33vh;
+    }
+    .cart-end{
+        grid-template-columns: 1fr 170px;
+    }
+    .pay-btn{
+        margin-left: 20px;
+    }
+    .cart-drinks{
+        grid-template-columns: 70% 18% 10%;
+    }
+    .drink-details{
+        font-size: 10px;
+    }
+    .close-cart{
+        top: -4%;
+        font-size: 1rem;
+        height: 6vw;
+        width: 6vw;
+    }
+    .close-about{
+        top: 6%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .nav-bar ul li{
+        font-size: 1rem;
+    }
+    .nav-list{
+        margin-left: 10%;
+    }
+
+    .drinks{
+        grid-template-columns: 30vw 30vw;
+        margin-left: 40px;
+    }
+    .drink-type{
+        width: 25vw;
+    }
+    .contact-us{
+        height: 40vh;
+        width: 65vw;
+        top: 40%;
+    }
+    .close-contact-form-btn{
+        top: -7%;
+    }
+    .cart{
+        top: 5%;
+        width: 55vw;
+        height: 33vh;
+    }
+    .cart-end{
+        grid-template-columns: 1fr 170px;
+    }
+    .pay-btn{
+        margin-left: 20px;
+    }
+    .cart-drinks{
+        grid-template-columns: 70% 18% 10%;
+    }
+    .drink-details{
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .close-cart{
+        top: -4%;
+        font-size: 1rem;
+        height: auto;
+        width: auto;
+    }
+    .close-about{
+        top: 6%;
+    }
+    .buy-btn{
+        font-size: 1rem;
+        width: 130px;
+    }
+    .drink-title{
+        margin-top: 10%;
+        font-size: 1.5rem;
+    }
+    .drink-list{
+        margin-top: 5%;
+    }
+    .drink-list-title{
+        font-size: 2rem;
+    }
+    .drink-menu-selection ul li{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .drinks{
+        grid-template-columns: 35vw 35vw;
+        margin-left: 20px;
+    }
+    .drink-menu-selection ul li{
+        font-size: 0.8rem;
+    }
+    .about-us{
+        width: 80vw;
+        height: 60%;
+        overflow: auto;
+        margin-left: -100px;
+    }
+    .close-about{
+        position: absolute;
+        width: 5vw;
+        height: 5vw;
+        right: 2%;
+        top: 9%;
+        font-size: 0.8rem;
+    }
+    .contact-us{
+        height: 80vh;
+        top: 60%;
+    }
+    .form-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .close-contact-form-btn{
+        width: 30px;
+        height: 30px;
+        right: -5%;
+        top: -5%;
+    }
+    .close-contact-form-btn span{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 85vw;
+        height: 50vh;
+    }
+    .total-amount, .pay-btn{
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    .cart-body{
+        height: 35vh;
+    }
+    .cart-drinks{
+        grid-template-columns: 65% 20% 10%;
+    }
+    .close-cart{
+        position: absolute;
+        width: 7vw;
+        height: 7vw;
+    }
+    .cart-title span{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .drink-list{
+        position: relative;
+        height: 25vh;
+    }
+    .drink-list-title{
+        font-size: 1.5rem;
+        width: 350px;
+    }
+    .drink-menu-selection{
+        width: 300px;
+    }
+    .drink-menu-selection ul li{
+        display: inline;
+    }
+    .drinks{    
+        grid-template-columns: 40vw 40vw;
+        margin-left: -35px;
+    }
+    .cart-drinks{
+        grid-template-columns: 60% 25% 10%;
+    }
+    .send-contact{
+        font-size: 1.3rem;
+        bottom: 2%;
+        text-align: center;
+    }
+    .cart-end{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay-btn{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .pay-btn span{
+        padding-left: 10px;
+    }
+    .total-amount{
+        padding-left: 0;
+    }
 }
