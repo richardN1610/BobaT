@@ -429,9 +429,6 @@ a{
     .nav-bar ul li{
         font-size: 1rem;
     }
-    .nav-list{
-        margin-left: 10%;
-    }
 
     .drinks{
         grid-template-columns: 30vw 30vw;

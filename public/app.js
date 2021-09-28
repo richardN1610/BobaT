@@ -65,3 +65,11 @@ function resetOpacity(modal,element){
   modal.style.display ="none"
   element.style.opacity = "0"
 }
+
+const toggleNavBar = document.getElementById('toggle-nav-bar');
+const navBar = document.getElementById('nav-bar-id');
+const drinkList = document.getElementById('drink-list');
+toggleNavBar.addEventListener('click', () =>{
+  navBar.classList.toggle('active');
+  drinkList.classList.toggle('active');
+})
