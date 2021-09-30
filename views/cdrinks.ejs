@@ -61,9 +61,8 @@
                             <div class="container" data-item-id="<%= item.id %>">
                                 <div class="drink-type" id="drink-type">
                                     <img src="/images/<%= item.img %>">
-                                    <span class="kj">
-                                        <%= item.kj %>
-                                    </span>
+                                    <span class="kj"><%= item.kj %></span>
+                                    <i class="fas fa-info-circle"></i>
                                 </div>
                                 <div class="drink-details">
                                     <span class="drink-name">
@@ -92,6 +91,7 @@
                                 <div class="drink-type" id="drink-type">
                                     <img src="/images/<%= item.img %>">
                                     <span class="kj"><%= item.kj %></span>
+                                    <i class="fas fa-info-circle"></i>
                                 </div>
                                 <div class="drink-details">
                                     <span class="drink-name"><%= item.name %></span>
@@ -106,6 +106,8 @@
                     </div>
                 </div>
             </section>
+            
+            <div class="invisible"></div>
     </div>
 </body>
 

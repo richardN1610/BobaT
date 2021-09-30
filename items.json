@@ -16,7 +16,7 @@
         },
         {
             "id":3,
-            "name": "Random Random",
+            "name": "Random",
             "price": 999,
             "img" :"drink3.png",
             "kj" : "1600kJ"
@@ -30,7 +30,7 @@
         },
         {
             "id":5,
-            "name": "Berry Berry",
+            "name": "BerryBerry",
             "price": 999,
             "img" :"drink5.png",
             "kj" : "1600kJ"
@@ -44,7 +44,7 @@
         },
         {
             "id":7,
-            "name": "Strawberry Rush",
+            "name": "xBerry Rush",
             "price": 999,
             "img" :"drink7.png",
             "kj" : "1600kJ"
@@ -74,7 +74,7 @@
         },
         {
             "id":5,
-            "name": "Random Random",
+            "name": "Randomx2",
             "price": 999,
             "img" :"drink5.png",
             "kj" : "1600kJ"
@@ -95,7 +95,7 @@
         },
         {
             "id":12,
-            "name": "Strawberry Rush",
+            "name": "Berry Rush",
             "price": 999,
             "img" :"drink12.png",
             "kj" : "1600kJ"
@@ -146,42 +146,42 @@
         },
         {
             "id":8,
-            "name": "Another Drink 3",
+            "name": "Another Drink",
             "price": 999,
             "img" :"drink8.png",
             "kj" : "1600kJ"
         },
         {
             "id":9,
-            "name": "One More Please",
+            "name": "One More",
             "price": 999,
             "img" :"drink9.png",
             "kj" : "1600kJ"
         },
         {
             "id":12,
-            "name": "I can't stop!",
+            "name": "Can't stop!",
             "price": 999,
             "img" :"drink12.png",
             "kj" : "1600kJ"
         },
         {
             "id":13,
-            "name": "Boba Addiction",
+            "name": "Addiction",
             "price": 999,
             "img" :"drink13.png",
             "kj" : "1600kJ"
         },
         {
             "id":7,
-            "name": "Every Day Boba",
+            "name": "BobaBoba",
             "price": 999,
             "img" :"drink7.png",
             "kj" : "1600kJ"
         },
         {
             "id":9,
-            "name": "This Is So Good",
+            "name": "So Good",
             "price": 999,
             "img" :"drink9.png",
             "kj" : "1600kJ"

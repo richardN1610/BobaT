@@ -42,7 +42,7 @@
 }
 .promote-item{
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 .advert{
     position: absolute;
@@ -78,6 +78,7 @@
     justify-content: space-between;
     width: 30px;
     height: 24px;
+    z-index: 100;
 }
 .menu-btn .bar{
     height: 4px;
@@ -86,21 +87,33 @@
     border-radius: 10px;
 }
 
+.promote-item{
+    height: 100%;
+    width: 100%;
+}
+
 @media screen and (max-width:414px) {
     .menu-btn{
         display: flex;
     }
-
     .nav-list ul{
         display: none;
         height: 100vh;
         background-color: lightcoral;
-    }
 
+    }
     .nav-list ul.active{
         display: flex;
         flex-direction: column;
-
+        animation: dropDown 0.8s forwards;
+    }
+    @keyframes dropDown {
+        0%{
+            transform: translateY(-5vh);
+        }
+       100%{
+           transform: translateY(0vh);
+       }
     }
     .nav-list .logo{
         position: relative;
